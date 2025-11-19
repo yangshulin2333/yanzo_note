@@ -4,6 +4,7 @@
 1. 登录个人git账户，新建git仓库
 	- ![350](assets/配置Obsidian图片上传/file-20251119183922815.png)
 	- ![350](assets/配置Obsidian图片上传/file-20251119184206644.png)
+2.  
 
 
 
