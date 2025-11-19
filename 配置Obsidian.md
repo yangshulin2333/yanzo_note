@@ -11,7 +11,7 @@
    git remote -v          # 查看详细信息
    git clone 
    ```
-
+   3. 初始化仓库后代开该地址。![350](assets/配置Obsidian/file-20251119195650562.png)
 
 
 ![](assets/配置Obsidian/file-20251119185228343%201.png)
