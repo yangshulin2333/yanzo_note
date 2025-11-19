@@ -7,6 +7,7 @@
 2.  ```bash
    git init # 初始化仓库
    git add . # 添加当前目录所有文件
+   git commit -m "首次提交"
    git clone 
    ```
 
