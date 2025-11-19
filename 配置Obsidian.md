@@ -8,6 +8,7 @@
    git init # 初始化仓库
    git add . # 添加当前目录所有文件
    git commit -m "首次提交" #把暂存区的内容正式保存到Git仓库，并附上说明
+   git remote -v          # 查看详细信息
    git clone 
    ```
 
