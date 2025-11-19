@@ -9,9 +9,10 @@
    git add . # 添加当前目录所有文件
    git commit -m "首次提交" #把暂存区的内容正式保存到Git仓库，并附上说明
    git remote -v          # 查看详细信息
-   git clone 
+   git clone git@github.com:yangshulin2333/yanzo_note2.git
    ```
    3. 初始化仓库后代开该地址。![350](assets/配置Obsidian/file-20251119195650562.png)
+   4. ![350](assets/配置Obsidian/file-20251119200212550.png)
 
 
 ![](assets/配置Obsidian/file-20251119185228343%201.png)
