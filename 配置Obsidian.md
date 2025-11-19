@@ -5,7 +5,8 @@
 	- ![350](assets/配置Obsidian/file-20251119185228343.png)
 	- ![350](assets/配置Obsidian/file-20251119185228342.png)
 2.  ```bash
-   git init
+   git init # 初始化仓库
+   git add . # 添加当前目录所有文件
    git clone 
    ```
 
