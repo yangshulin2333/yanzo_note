@@ -40,3 +40,6 @@
 
 ![](assets/配置Obsidian/file-20251119185228343%201.png)
 ## 接入Gemini-CLI AI编程工具
+
+
+![测试思维.excalidraw](Excalidraw/测试思维.excalidraw.md)
