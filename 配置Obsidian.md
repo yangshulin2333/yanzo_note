@@ -42,4 +42,3 @@
 ## 接入Gemini-CLI AI编程工具
 
 
-![测试思维.excalidraw](Excalidraw/测试思维.excalidraw.md)
