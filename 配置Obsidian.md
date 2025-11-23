@@ -39,3 +39,4 @@
 ![](assets/配置Obsidian/file-20251119212020891.png)
 
 ![](assets/配置Obsidian/file-20251119185228343%201.png)
+## 接入Gemini-CLI AI编程工具
