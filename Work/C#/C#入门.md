@@ -1,11 +1,4 @@
----
-title: C#入门
-category: C#
-tags: C#入门
-updatedAt: 2025-10-05T05:05:09.713Z
-createdAt: 2025-09-22T02:44:16.975Z
----
-#标签/C/a
+#Csharp/Csharp入门
 
 
 ##### 数值类型一览表
