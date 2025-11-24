@@ -721,9 +721,12 @@ Console.CursorVisible = false;
 Environment.Exit(0);
 ```
 ###### 随机数
+语法：Random 随机数变量名 = new Random();
 
 ```
 Random r = new Random();
+int i = r.Next(); #生成一个非负的随机数
+int i = r.Next(100);生成一个0~99的随机数
 ```
 
 
