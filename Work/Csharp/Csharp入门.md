@@ -723,7 +723,8 @@ Environment.Exit(0);
 ###### 随机数
 
 ```
-Random 随机数变量名 = new Random();
+Random r = new Random();
 ```
+
 
 
