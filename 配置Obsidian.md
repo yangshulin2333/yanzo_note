@@ -1,5 +1,7 @@
 [# Obsidian邪修用法，免费云同步，AI，手机端，还有进阶技巧](https://www.youtube.com/watch?v=IlNOhNeWGgY&t=106s)
 
+[操作文档](https://publish.obsidian.md/help-zh/%E7%94%B1%E6%AD%A4%E5%BC%80%E5%A7%8B)
+
 ## git云同步
 1. 登录个人git账户，新建git仓库[📚 Git命令完全教程](📚%20Git命令完全教程.md)
 	- ![350](assets/配置Obsidian/file-20251119185228343.png)
