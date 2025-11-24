@@ -726,7 +726,8 @@ Environment.Exit(0);
 ```
 Random r = new Random();
 int i = r.Next(); #生成一个非负的随机数
-int i = r.Next(100);生成一个0~99的随机数
+int i = r.Next(100);生成一个0~99的随机数，左包含you'bubaohan
+int i = r.Next(5,100);生成一个5~99的随机数，左闭右开
 ```
 
 
