@@ -7,4 +7,4 @@
 - 颜色主题![](assets/Visual-Studio/file-20251124174602673.png)
 - 字体设置
 	- 工具->选项->环境->其他设置![](assets/Visual-Studio/file-20251124174841893.png)
-- 行号设置
+- 行号设置![](assets/Visual-Studio/file-20251124175009524.png)
