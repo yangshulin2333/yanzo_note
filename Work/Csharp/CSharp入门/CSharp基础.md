@@ -51,4 +51,6 @@ int[][] arrs2 = {
 	new int[]{1,2},
 	new int[]{1}
 }
+arrs2.GetLength(0);//行
+arrs2[0].Length//第0行有多少列
 ```
