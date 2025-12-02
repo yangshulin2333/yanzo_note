@@ -30,4 +30,6 @@ enum E_自定义枚举名{
 变量类型[,] arr;
 变量类型[,] arr2 = new 变量类型 [行, 列];
 变量类型[,] arr2 = new 变量类型 [行, 列];
+arr2.GetLength(0);//行
+arr2.GetLength(1);//列
 ```
