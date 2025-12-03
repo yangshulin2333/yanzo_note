@@ -143,3 +143,65 @@ static 返回类型 函数名(参数类型 参数1,参数类型 参数2,......){
 
 - **`ref`**：参数必须在使用前初始化，适用于需要在方法内读写参数值的情况。
 - **`out`**：参数可以在使用前未初始化，但方法内必须对其赋值，适用于需要返回多个结果的情况。
+#### 变长参数
+
+在C#中，`params`关键字用于允许方法接收可变数量的参数。这个参数必须是方法签名中的最后一个参数，并且必须是一个数组类型。使用`params`可以简化向方法传递多个参数的操作。
+
+##### 基本用法
+
+- **语法**：
+
+  ```csharp
+  void MyMethod(params int[] numbers)
+  {
+      foreach (int number in numbers)
+      {
+          Console.WriteLine(number);
+      }
+  }
+  ```
+
+- **调用方式**：
+
+  你可以传递任意数量的参数，甚至不传递参数。
+
+  ```csharp
+  MyMethod(1, 2, 3, 4, 5);
+  MyMethod(); // 空调用
+  ```
+
+- **数组传递**：
+
+  如果你已经有一个数组，可以直接传递数组：
+
+  ```csharp
+  int[] myNumbers = { 1, 2, 3 };
+  MyMethod(myNumbers);
+  ```
+
+##### 注意事项
+
+- `params`参数必须是方法签名中的最后一个参数。
+- 一个方法只能有一个`params`参数。
+- 可以传递零个或多个参数，或者直接传递一个数组。
+
+##### 实际应用
+
+`params`关键字常用于需要灵活数量输入的情况，例如计算总和、连接字符串等。
+
+```csharp
+int Sum(params int[] numbers)
+{
+    int sum = 0;
+    foreach (int num in numbers)
+    {
+        sum += num;
+    }
+    return sum;
+}
+
+// 示例调用
+int total = Sum(1, 2, 3, 4); // total为10
+```
+
+使用`params`关键字可以提高方法的灵活性和可用性，尤其是在你无法预知具体参数数量的场景中。
