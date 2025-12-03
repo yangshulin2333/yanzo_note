@@ -8,3 +8,6 @@
 - 字体设置
 	- 工具->选项->环境->其他设置![](assets/Visual-Studio/file-20251124174841893.png)
 - 行号设置![](assets/Visual-Studio/file-20251124175009524.png)
+
+### 快捷键
+- 在 Visual Studio 中，将所有代码折叠的快捷键是 **Ctrl + M, O**。
