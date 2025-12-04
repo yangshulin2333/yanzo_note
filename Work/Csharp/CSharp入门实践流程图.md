@@ -81,7 +81,7 @@ boss死亡，营救成功，打印游戏结束 ^NIt5m31t
 退出游戏 ^F50L24oL
 
 ## Element Links
-Rr7gyaFm: [[入门实践代码.md]]
+Rr7gyaFm: [[入门实践代码]]
 
 %%
 ## Drawing
