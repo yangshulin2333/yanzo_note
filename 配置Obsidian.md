@@ -23,12 +23,12 @@
    git clone https://github.com/yangshulin2333/yanzo_note2.git #https协议
    ```
 	- ![350](assets/配置Obsidian/file-20251119200212550.png)
-	- 注意：移动端暂不支持ssh协议 ![359](assets/配置Obsidian/file-20251119200446037.png)
+	- 注意：移动端暂不支持ssh协议 ![50](assets/配置Obsidian/file-20251119200446037.png)
 5. 借助git第三方插件设置Obsidian自动云同步到git
 	- 开启`Pull on startup`选项
 	- 开启`Auto commit-and-sync after stopping file edits`选项
 	- 设置`Auto commit-and-sync interval (minutes)`自动提交时间
-	- ![350](assets/配置Obsidian/file-20251119201843469.png)
+	- [![350](assets/配置Obsidian/file-20251119201843469.png)]()
 
 ## git同步图片上传
 第三方插件`Custom Attachment Location`
