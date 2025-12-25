@@ -151,8 +151,10 @@ int number = list[0]; // 不需要强制转换，非常快
 关键字：
 delegate
 语法：
+```
 访问修饰符 delegate 返回值 委托名(参数列表);
+```
 
-访问修饰符不写默认为public
+访问修饰符不写默认为public，可以申明在namespace 和 class语句块中
 
 委托规则的申明是不能重名 
