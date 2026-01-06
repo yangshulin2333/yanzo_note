@@ -170,4 +170,9 @@ delegate
 - 多播委托（Multicast Delegate），也就是“一个信号，触发多个动作”。
 
 ### 系统定义好的常用委托
+`Action`
+`Func <int, string>`
 
+## 事件
+基于委托封装的“通知机制”，实现了 **发布者 (Publisher)** 与 **订阅者 (Subscriber)** 的解耦。
+防止外部随意置空、调用委托
