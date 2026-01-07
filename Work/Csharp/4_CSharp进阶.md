@@ -156,7 +156,7 @@ int number = list[0]; // 不需要强制转换，非常快
 Dictionary<int,string> dictionary = new Dictionary<int,string>();
 
 注意：
-不能出现相同的键
+不能出现相同的键 
 
 
 ## 委托
