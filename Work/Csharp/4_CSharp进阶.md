@@ -155,6 +155,9 @@ int number = list[0]; // 不需要强制转换，非常快
 //需要引用命名空间using System.Collections.Generic
 Dictionary<int,string> dictionary = new Dictionary<int,string>();
 
+注意：
+不能出现相同的键
+
 
 ## 委托
 [CSharp 委托与事件 (Delegate & Event) 实战教学笔记](知识点/CSharp%20委托与事件%20(Delegate%20&%20Event)%20实战教学笔记.md)
