@@ -141,6 +141,21 @@ int number = list[0]; // 不需要强制转换，非常快
 3. **永远不要选 `ArrayList`**：
     
     - 忘记它的存在。
+
+## 字典
+关键字：
+`Dictionary`
+
+本质：
+可以将Dictionary理解为 拥有泛型的 Hashtable
+它也是基于键的哈希代码组织起来的 键/值对
+键值对类型 从Hashtable的object变为了 可以自己定制的泛型
+
+申明：
+//需要引用命名空间using System.Collections.Generic
+Dictionary<int,string> dictionary = new Dictionary<int,string>();
+
+
 ## 委托
 [CSharp 委托与事件 (Delegate & Event) 实战教学笔记](知识点/CSharp%20委托与事件%20(Delegate%20&%20Event)%20实战教学笔记.md)
 
@@ -176,3 +191,4 @@ delegate
 ## 事件
 基于委托封装的“通知机制”，实现了 **发布者 (Publisher)** 与 **订阅者 (Subscriber)** 的解耦。
 防止外部随意置空、调用委托
+
