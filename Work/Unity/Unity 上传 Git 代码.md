@@ -84,8 +84,9 @@ Bash
 git add .
 ```
 
-_(注意最后有个点，代表“所有”)_
-
+- **正常现象：** 可能会出现一堆 `warning: LF will be replaced by CRLF...`，这是自动转换换行符，**不用管，直接忽略**。
+- **异常现象：** 如果出现 `Permission denied ... .vs/...`，说明你**没创建好 .gitignore** 或者 **文件没生效**。
+    - _补救措施：_ 关掉 Unity 和 VS，确认 `.gitignore` 存在且内容正确，然后执行 `rm -rf .git` 删库重来。
 #### 2. 记录 (Commit)
 
 给这次修改打上标签，生成快照。
@@ -96,19 +97,37 @@ Bash
 git commit -m "Day 3: 完成了僵尸AI寻路功能"
 ```
 
-_(引号里写清楚你干了什么，尽量简洁)_
 
-#### 3. 发车 (Push)
+#### 3. 推送到远程（云端备份）
 
-把本地快照推送到 GitHub 云端。
+去 GitHub 或 Gitee 创建一个**空仓库**（不要勾选“初始化 readme”），复制仓库地址（以 `.git` 结尾的链接）。
+
+
+##### 第一步：重命名分支（规范化）
 
 Bash
 
 ```
-git push
+git branch -M main
 ```
 
-_(第一次推送可能需要用 `git push -u origin main`，以后直接 `git push` 即可)_
+##### 第二步：关联远程仓库
+
+Bash
+
+```
+git remote add origin <你的仓库地址>
+```
+
+_例如：_ `git remote add origin https://github.com/yangshulin2333/KitchenChaos.git`
+
+##### 第三步：推送到云端
+
+Bash
+
+```
+git push -u origin main
+```
 
 ---
 
