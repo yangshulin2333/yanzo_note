@@ -217,7 +217,7 @@ delegate
     
     - `Func<bool>` = 返回一个布尔值。
         
-    - `Func<int, bool>` = 给你个整数，返回一个布尔值。
+    - `Func<int, bool>` = 给你个整数，返回一个布尔值。（int是入参。bool是返回值）
         
 
 #### 3. `EventHandler` (官方仪式派) —— **教程里用的就是这个！**
