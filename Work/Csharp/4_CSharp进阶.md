@@ -170,11 +170,14 @@ Dictionary<int,string> dictionary = new Dictionary<int,string>();
 
 关键字：
 delegate
-### 语法：
+### 定义语法（造模具）：
 ```
 访问修饰符 delegate 返回值 委托名(参数列表);
 ```
-
+声明事件（使用模具）：
+```
+访问修饰符 event 委托类型 事件名;
+```
 访问修饰符不写默认为public，可以申明在namespace 和 class语句块中
 
 委托规则的申明是不能重名 
