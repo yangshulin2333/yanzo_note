@@ -191,44 +191,100 @@ delegate
 - 多播委托（Multicast Delegate），也就是“一个信号，触发多个动作”。
 
 ### 系统定义好的常用委托
-#### 1. `Action` (行动派) —— **最常用！**
 
-- **特点：** 只干活，**不返回任何值**（void）。
-    
-- **场景：** 只是通知一声“做某事”。
-    
-- **Input System 用的就是这个！**
-    
-    - `Action` = 无参数，干活。
-        
-    - `Action<int>` = 给你个整数，干活。
-        
-    - `Action<CallbackContext>` = 给你个上下文参数，干活。
-		
-        
+#### 【破局者笔记】 C# 委托御三家 (The Big Three)
 
-#### 2. `Func` (计算派)
+##### 1. Action (行动派)
+- **口诀：** **只干活，不废话（返回 void）。**
+- **应用场景：** UI 按钮点击、Input System 按键触发、简单的广播通知。
+- **泛型规则：** `< >` 里全是参数。
 
-- **特点：** 干完活，**必须返回一个结果**。
-    
-- **场景：** 数据处理、LINQ 查询。
-    
-- **记忆口诀：** 最后一个参数是返回类型。
-    
-    - `Func<bool>` = 返回一个布尔值。
-        
-    - `Func<int, bool>` = 给你个整数，返回一个布尔值。（int是入参。bool是返回值）
-        
+```CSharp
+using System; // 必须引用 System 命名空间
 
-#### 3. `EventHandler` (官方仪式派) —— **教程里用的就是这个！**
+public class ActionExample : MonoBehaviour {
+    // 定义：我要一个事件，触发时要把“死因(string)”传出去
+    public event Action<string> OnPlayerDied;
 
-- **特点：** 专门用于**标准事件模式**。
-    
-- **结构：** 永远带两个参数：`(object sender, EventArgs e)`。
-    
-    - `sender`: 谁发的？（案发现场）
+    void Start() {
+        // 订阅 (+=)：只要符合 void 方法名(string) 就能连
+        OnPlayerDied += GameOverLogic;
         
-    - `e`: 有什么附加数据？（证物）
+        // 触发 (Invoke)：喊那一嗓子
+        OnPlayerDied?.Invoke("掉进坑里了");
+    }
+
+    // 符合签名的方法
+    void GameOverLogic(string reason) {
+        Debug.Log("游戏结束，原因：" + reason);
+    }
+}
+```
+
+---
+
+##### 2. Func (计算派)
+
+- **口诀：** **屁股（最后一个）才是结果，前面全是入参。**
+- **应用场景：** 只需要计算结果、判断条件（LINQ）、从别的地方“偷”数据。
+- **泛型规则：** `Func<入参1, 入参2, ..., 返回值>`
+C#
+```
+using System;
+
+public class FuncExample : MonoBehaviour {
+    // 定义：哪怕你不知道金币怎么算的，但你需要一个“输入花费(int)，返回能不能买(bool)”的计算器
+    // int = 入参 (花费多少)
+    // bool = 返回值 (能买吗？)
+    public Func<int, bool> CheckCanAfford;
+
+    void Start() {
+        // 赋值：这里用 Lambda 表达式写了个匿名函数
+        // x 代表入参 int
+        CheckCanAfford = (x) => {
+            return x <= 100; // 假设玩家有100块，如果花费 x 小于等于 100 就返回 true
+        };
+
+        // 使用：直接像调用函数一样用它，并拿到返回值
+        bool result = CheckCanAfford(50); // 返回 true
+        bool result2 = CheckCanAfford(200); // 返回 false
+    }
+}
+```
+##### 3. EventHandler (官方派)
+- **口诀：** **讲礼貌，守规矩。必须带两个特定的参数。**
+- **应用场景：** 遵循微软标准事件模式、Code Monkey 教程里的交互系统。
+- **固定签名：** `void 方法名(object 发送者, EventArgs 参数包)`
+C#
+```
+using System;
+
+public class EventHandlerExample : MonoBehaviour {
+    // 定义：不需要写尖括号（除非你有自定义参数类），它是最标准的写法
+    public event EventHandler OnInteract;
+
+    void Start() {
+        // 订阅
+        OnInteract += MyInteractFunction;
+
+        // 触发：
+        // 参数1 (this): 告诉别人“是我发的”
+        // 参数2 (EventArgs.Empty): 告诉别人“我没有额外数据要传，纯打个招呼”
+        OnInteract?.Invoke(this, EventArgs.Empty);
+    }
+
+    // 符合签名的方法：必须带 sender 和 e
+    void MyInteractFunction(object sender, EventArgs e) {
+        Debug.Log("收到！有人按了互动键！");
+    }
+}
+```
+#### 【总结图谱】
+[](总结图谱)
+**这三张卡片存好，以后遇到委托的问题，拿出来看一眼，秒懂！**
+
+
+
 ## 事件
 基于委托封装的“通知机制”，实现了 **发布者 (Publisher)** 与 **订阅者 (Subscriber)** 的解耦。
 防止外部随意置空、调用委托
