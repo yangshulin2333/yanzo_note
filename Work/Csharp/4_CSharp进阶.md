@@ -204,6 +204,11 @@ delegate
     - `Action<int>` = 给你个整数，干活。
         
     - `Action<CallbackContext>` = 给你个上下文参数，干活。
+	    - - `Action`: 代表 `void 方法名()`
+    
+		- `Action<int>`: 代表 `void 方法名(int)`
+    
+		- `Action<CallbackContext>`: 代表 `void 方法名(CallbackContext)`
         
 
 #### 2. `Func` (计算派)
