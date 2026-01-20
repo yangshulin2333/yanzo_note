@@ -85,8 +85,7 @@ C#
 
 ```
 public void SetKitchenObjectParent(IKitchenObjectParent kitchenObjectParent) {
-    // ... 之前的逻辑 ...
-    
+    // ... 之前的逻辑 ... 
     // 核心改变：
     // 以前这里写的是 this.clearCounter = clearCounter;
     // 现在变成了通用的 interface：
