@@ -1,177 +1,115 @@
 
-### 第一部分：Prompt（提示词）要不要单独写个文件？
 
-**答案：绝对要！**
 
-把几百字的提示词硬编码在 `MainWindow.xaml.cs` 的点击事件里，就像把“菜谱”纹身在厨师的手臂上一样，想改个菜还得洗纹身，太蠢了。
 
-我们现在用 **“中级方案”**：把它挪到 `AppConfig.cs` 里，或者专门建一个 `GamePrompts.cs`。这样你的逻辑代码（MainWindow）就很干净，专门负责“干活”，而不用管“怎么说话”。
-
-#### 操作步骤：
-
-1. 在 `Services` 文件夹旁边，或者项目根目录下，新建一个类 `GamePrompts.cs`。
-    
-2. 把那大段的字符串搬过去：
-    
-
-C#
-
-```
-namespace GooseMind
-{
-    public static class GamePrompts
-    {
-        // 这里的 @ 符号表示“逐字字符串”，允许你直接换行写，不用加 \n
-        public const string AnalyzeSituation = @"
-你是一个《Goose Goose Duck》高玩助手。请仔细查看这张游戏截图：
-
-1. **寻找我的身份**：
-   - 请在画面左侧的玩家列表中，找到名字包含【{0}】的那一行。
-   - 或者寻找有【黄色高亮/背景框】的玩家（那就是我）。
-   - 读取该玩家名字旁边的文字或图标，告诉我我的【职业/身份】是什么？
-
-2. **分析局势**：
-   - 现在的游戏阶段是什么？
-   - 画面中是否有谁被标记为死亡（打叉）？
-
-请用中文简短回答。
-";
-    }
-}
-```
-
-3. 然后在 `MainWindow.xaml.cs` 里调用：
-    
-
-C#
-
-```
-// string.Format 用来把 {0} 替换成你的名字
-string prompt = string.Format(GamePrompts.AnalyzeSituation, AppConfig.MyGameName);
-```
-
-这样以后你想改提示词，只改 `GamePrompts.cs` 这里的字就行了，不用去翻逻辑代码。
+我们要解决的第一个“不可抗力”是：**如何从屏幕上精准找到《鹅鸭杀》的窗口并实时抓取它的画面。**
 
 ---
 
-### 第二部分：从点一下到弹窗，到底发生了什么？（彻底掌握原理）
+### 第一步：安装“特工工具包”
 
-你点击按钮，屏幕上弹出一行字，这中间经历了 **7 个步骤**，跨越了 **半个地球**。
+请在你的命令行（CMD/Terminal）中输入以下命令，安装我们需要的第一批库。这些库是实现实战辅助的工业标准：
 
-我画了一个流程图，配合下面的文字看，保证你懂。
-
-代码段
+Bash
 
 ```
-graph TD
-    A[你点击按钮] -->|1. 触发| B(C# 主程序)
-    B -->|2. 截图| C[WindowHelper]
-    C -->|3. 编码| D[VisionService]
-    D -->|4. 发包| E[GroqVisionService]
-    E -->|5. 翻墙| F[本地代理 10808]
-    F -->|6. 跨海| G[你的 VPS 服务器]
-    G -->|7. 算力| H[Groq 美国机房]
-    H -->|8. 结果| A
+python3 -m pip install mss pywin32 opencv-python numpy
 ```
 
-📊 Diagram</> Code
-
-#### 第 1 步：触发 (Trigger)
-
-- **动作**：你的手指按下了鼠标左键。
+- **`mss`**: 极致的高速截屏工具，直接读取显存，解决延迟问题的核心。
     
-- **代码**：`MainWindow.xaml.cs` 里的 `TestVision_Click` 被激活。
+- **`pywin32`**: 让我们能用 Python 控制和获取 Windows 窗口句柄（Handle）。
     
-- **状态**：此时程序还在**UI线程**（主线程）上。
+- **`opencv-python`**: 图像处理的“瑞士军刀”，用来判断画面内容。
+    
+- **`numpy`**: 图像数据的数学运算基础。
+    
+---
+
+### 第二步：编写“画面同步”代码
+
+这是我们的第一个脚本 `screen_test.py`。
+
+**这个脚本的任务是：** 找到游戏窗口，并以最高频率把游戏画面实时显示在一个 Python 小窗口里。如果这一步能流畅运行，我们就解决了“延迟”和“画面获取”这两个最大的门槛。
+
+请创建一个文件夹，新建 `screen_test.py`，把以下内容粘进去：
+
+Python
+
+```
+import cv2
+import numpy as np
+from mss import mss
+import pygetwindow as gw # 如果安装报错，可以用下面的 win32gui 方案
+import win32gui
+import time
+
+def get_game_window(title="Goose Goose Duck"):
+    """
+    通过标题找到游戏窗口的坐标
+    """
+    hwnd = win32gui.FindWindow(None, title)
+    if not hwnd:
+        return None
+    
+    # 获取窗口坐标 (left, top, right, bottom)
+    rect = win32gui.GetWindowRect(hwnd)
+    return {
+        "top": rect[1],
+        "left": rect[0],
+        "width": rect[2] - rect[0],
+        "height": rect[3] - rect[1]
+    }
+
+def main():
+    with mss() as sct:
+        print("正在寻找游戏窗口...")
+        
+        while True:
+            # 1. 实时更新窗口位置（防止你拖动游戏窗口）
+            monitor = get_game_window("Goose Goose Duck")
+            
+            if monitor is None:
+                print("\r找不到游戏，请先打开《鹅鸭杀》！", end="")
+                time.sleep(1)
+                continue
+
+            # 2. 截取画面
+            # sct.grab 会直接获取 monitor 指定区域的像素
+            img = sct.grab(monitor)
+            
+            # 3. 转换格式，让 OpenCV 能处理
+            frame = np.array(img)
+            
+            # 4. 显示画面 (验证延迟)
+            cv2.imshow("GooseMind_Vision_Test", frame)
+
+            # 5. 退出机制：按 'q' 键退出 (模仿视频中的逻辑)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+### 为什么这样写？（确保你掌握每一行）
+
+1. **`win32gui.FindWindow`**: 这是在 Windows 系统的“电话本”里查名字，找到《鹅鸭杀》的门牌号（句柄）。
+    
+2. **`sct.grab(monitor)`**: 这就是视频里说的“死循环截屏”。它只截取游戏所在的那个框，不浪费性能去截桌面其他地方。
+    
+3. **`cv2.imshow`**: 它的作用是把抓到的画面弹出来。如果这个弹窗里的画面和你游戏里的一样流畅，说明我们的“采集引擎”完全合格，实战不会卡顿。
     
 
-#### 第 2 步：抓取 (Capture) —— “眼睛”
+### 你需要做的：
 
-- **代码**：`WindowHelper.CaptureWindow(handle)`
+1. **运行这个脚本**：在命令行输入 `python screen_test.py`。
     
-- **原理**：
+2. **观察**：游戏画面是否出现在了 Python 的窗口里？当你移动游戏角色时，Python 窗口里的画面延迟高吗？
     
-    - C# 通过 Windows API (`user32.dll`) 找到显存里存放 `scrcpy` 窗口画面的那块内存。
-        
-    - 它把这块像素数据（RGB颜色值）复制出来，变成一个 `Bitmap` 对象存放在你的内存条里。
-        
 
-#### 第 3 步：编码 (Encoding) —— “视神经”
-
-- **代码**：`VisionService.ImageToBase64(bmp)`
-    
-- **原理**：
-    
-    - AI 的接口是 Web API，它只认识文本（字符串），不认识图片对象。
-        
-    - 所以我们必须把图片进行 **Base64 编码**。
-        
-    - **比喻**：就像把一张画，翻译成了一串巨长无比的乱码字符（比如 `iVBORw0KGgoA...`），这串字符就能代表这张图。
-        
-
-#### 第 4 步：打包与发货 (Packaging) —— “寄信”
-
-- **代码**：`GroqVisionService.AnalyzeImage(...)`
-    
-- **原理**：
-    
-    - C# 创建了一个 JSON 包裹。
-        
-    - 里面装着：`Model` (我要找 Llama 4)、`Prompt` (你的问题)、`Image` (刚才那串乱码)。
-        
-    - 然后 C# 说：“好了，我要把这个包裹发给 `api.groq.com`。”
-        
-
-#### 第 5 步：偷渡 (Proxying) —— “钻地道”
-
-- **关键点**：这就是你问的代理原理。
-    
-- **现状**：`api.groq.com` 在美国，且屏蔽了中国 IP，或者被中国墙了。
-    
-- **操作**：
-    
-    - 因为你在代码里写了 `Proxy = 127.0.0.1:10808`。
-        
-    - C# 没有直接往美国发数据，而是把包裹扔给了你电脑上的 **v2rayN (10808端口)**。
-        
-    - **v2rayN** 接到包裹，把它加密（伪装成普通网页流量），通过 Reality 协议发出去。
-        
-
-#### 第 6 步：跨海传输 (Transmission) —— “海底光缆”
-
-- **原理**：
-    
-    - 加密的数据包通过海底光缆，瞬间到达了你在洛杉矶/新加坡购买的 VPS 服务器。
-        
-    - VPS 解开包裹，发现是发给 Groq 的，于是它**替你**把包裹转发给 Groq。
-        
-
-#### 第 7 步：大脑思考 (Inference) —— “神经元点火”
-
-- **地点**：Groq 的机房（使用 LPU 芯片，速度极快）。
-    
-- **过程**：
-    
-    - Llama 4 模型“看”到了那串 Base64 乱码，在显存里还原成图片。
-        
-    - 它定位到“六六混瑶子”，看到了旁边的图标。
-        
-    - 它计算出概率最高的回答：“侦探”。
-        
-
-#### 第 8 步：返程与展示 (Callback) —— “弹窗”
-
-- **代码**：`await` 结束，拿到 `result`。
-    
-- **原理**：
-    
-    - 文本结果原路返回（Groq -> VPS -> v2rayN -> C#）。
-        
-    - `MessageBox.Show(result)`：C# 告诉 Windows 系统：“帮我画一个小灰框，把这句话写上去，并暂停程序直到用户点击确定。”
-        
-
-### 总结
-
-你觉得只是“弹了一个窗”，实际上你的电脑在 **0.5 秒内** 完成了像素提取、编码转换、本地代理转发、跨洋加密传输、云端矩阵运算，最后才把结果送回你手里。
-
-这就是现代软件开发的魅力：**组合巨人的肩膀。**
+**如果你成功看到了画面，请告诉我，我们将进行下一步：教程序“认出”那个“组局”按钮，实现大厅自动判定。**
