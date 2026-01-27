@@ -3,6 +3,7 @@
 
 [RVC客户端](https://huggingface.co/wok000/vcclient000/tree/main)
 
+[虚拟声卡](https://vb-audio.com/Voicemeeter/index.htm)
 
 
 - **`cuda`**：代表 **NVIDIA 显卡**专用。因为你是 **4070 Super**，用这个版本能发挥显卡的最强性能，延迟最低。
