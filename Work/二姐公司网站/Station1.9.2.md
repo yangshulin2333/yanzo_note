@@ -3,6 +3,49 @@
 This master document synthesizes the complete Particle ecosystem—ranging from high-level business solutions to granular technical specifications.
 
 ---
+## ## 0. Homepage Architecture & Copy Strategy
+
+_(Added based on Visual Reference)_
+
+**Goal:** Convert "Developers" into "Platform Users" immediately.
+
+### **Section A: Global Navigation Bar**
+
+- **Left:** Particle Logo.
+    
+- **Center Links:** Platform, Supported Devices, Solutions, Developers, Pricing.
+    
+- **Right (CTA):** Contact Sales (Button), Login/Console (Icon).
+    
+
+### **Section B: Hero Area (Above the Fold)**
+
+- **Visual Focus:** A split-screen visual showing **VS Code (Code)** on the left and **Particle Console (Map/Vitals)** on the right. This visually proves the "Software to Hardware" connection.
+    
+- **Key Copy (H1 Headline):**
+    
+    > **"Ship software to hardware."**
+    
+- **Sub-headline (H2):**
+    
+    > "Built for **developer productivity**, observability, and reliability." _(Note: The words "developer productivity" are highlighted)._
+    
+- **Floating Banner (New Product):**
+    
+    - **Image:** Tachyon SBC.
+        
+    - **Text:** "Order your Tachyon now! Embed intelligence into anything... with 5G connected, AI accelerated single-board computer."
+        
+
+### **Section C: Social Proof (Logo Wall)**
+
+- **Placement:** Immediately below Hero.
+    
+- **Strategy:** Show enterprise trust to validate the "Developer" tool.
+    
+- **Logos:** Halliburton, P&G, Goodyear, Jacuzzi, Trek.
+
+---
 
 ## ## 1. Hardware Portfolio
 
