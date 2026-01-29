@@ -1,3 +1,61 @@
+# 【PROLOGUE】: THE FRONT-END EXPERIENCE
+*Source: Homepage Marketing & Global Navigation Logic*
+
+## 0.1 Global Navigation (Header)
+**Layout Spec:** Fixed Header. Left Logo, Center Links, Right Actions.
+
+* **Logo:** [Particle Brand Asset]
+* **Menu Item 1: Platform** (Dropdown)
+    * Edge infrastructure
+    * Network and connectivity
+    * Cloud infrastructure
+    * Management and oversight
+    * Application development
+* **Menu Item 2: Solutions** (Dropdown)
+    * *By Use Case:* Asset tracking, Preventative maintenance, Equipment monitoring.
+    * *By Industry:* Emissions, Smart Energy, HVAC, LEV.
+* **Menu Item 3: Developers** (Dropdown)
+    * Docs, Tutorials, Blog, Community, Tools.
+* **Menu Item 4: Pricing** (Link Target: Section 6)
+* **Action Group (Right):**
+    * *Secondary:* [Login] / [Contact Sales]
+    * *Primary Button:* **Start for free** (Accent Color)
+
+## 0.2 Hero Section (Above the Fold)
+**Layout Spec:** Split Screen / Centered. High Visual Impact.
+
+* **H1 Headline:** **"Application infrastructure for intelligent devices"**
+* **Sub-headline:** "Ship software to hardware. Built for **developer productivity**, observability, and reliability."
+* **Visual Focus:** Split-screen visual showing **VS Code (Code)** on the left and **Particle Console (Map/Vitals)** on the right. (Visually proving the "Software to Hardware" connection).
+* **Primary CTA:** [Start for free]
+* **Secondary CTA:** [Contact Sales]
+* **Trust Signals:** Halliburton, P&G, Jacuzzi, Trek, GoodYear.
+
+## 0.3 Core Platform Value Narrative (Z-Pattern Layout)
+*The marketing "hook" before diving into technical details.*
+
+* **Module A: Edge Infrastructure**
+    * *Headline:* **Embedded intelligence.**
+    * *Copy:* Reliably deploy OTA updates to any device—from KB-scale microcontrollers to GB-scale edge computers.
+    * *Visual:* Chipset/SBC close-up.
+* **Module B: Connectivity**
+    * *Headline:* **Wireless connectivity that just works.**
+    * *Copy:* Abstracted communications layer for LTE, 5G, Wi-Fi, Satellite, and LoRaWAN.
+    * *Visual:* Global SIM/Signal wave map.
+* **Module C: Cloud Infrastructure**
+    * *Headline:* **Turning data into actions.**
+    * *Copy:* Turn data into immediate insights through real-time automation infrastructure (Event Bus, Logic).
+    * *Visual:* Data pipeline diagram.
+* **Module D: Application Development**
+    * *Headline:* **Software-defined everything.**
+    * *Copy:* A developer-friendly framework spanning device and cloud.
+    * *Visual:* Workbench/CLI screenshot.
+
+---
+
+# 【MAIN BODY】: TECHNICAL SPECIFICATIONS & INVENTORY
+*(Original Content starts below)*
+
 # Particle Master Documentation: The Ultimate IoT Resource
 
 This master document synthesizes the complete Particle ecosystem—ranging from high-level business solutions to granular technical specifications.
