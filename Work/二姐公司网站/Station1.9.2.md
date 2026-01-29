@@ -203,6 +203,94 @@ A Data Operation is the unit of measure for cloud interaction.
 - **Technical Advisories (TAN):** Critical updates (e.g., TAN006 for GNSS interface) are published regularly to ensure fleet reliability.
     
 
+## ## 10. Hardware Comparison: The "Gen 4" Powerhouses
+
+Choosing between Particle's top-tier modules depends on your computational needs and connectivity environment.
+
+|**Feature**|**Tachyon (5G SBC)**|**M-SoM (Multi-Radio)**|**B-SoM / Boron (LTE-M)**|
+|---|---|---|---|
+|**Primary Radio**|5G (Sub-6 GHz)|LTE-M / 2G + Satellite|LTE-M (Cat M1)|
+|**Secondary Radio**|Wi-Fi 6E, BT 5.2|Wi-Fi (Dual-band), BLE 5.0|BLE 5.0|
+|**Processor**|Qualcomm Octa-core (AI)|Realtek RTL872x|Nordic nRF52840|
+|**Operating System**|Linux (Ubuntu/Debian)|Particle Device OS|Particle Device OS|
+|**Edge AI**|High (Integrated NPU)|Low (Simple TFLite)|Low (Basic patterns)|
+|**Form Factor**|Single Board Computer|M.2 SoM|M.2 SoM / Feather|
+|**Best For**|Video, Gateways, Edge ML|Global Asset Tracking|Static Industrial Sensors|
+
 ---
 
-**Would you like me to generate a Comparison Table between the new Tachyon 5G and the existing M-SoM modules, or perhaps a sample C++ boilerplate for a multi-sensor Ledger implementation?**
+## ## 11. Advanced Implementation: Multi-Sensor Ledger
+
+**Particle Ledger** is the preferred method for state management in 2026. Unlike standard variables, Ledgers are persistent and support complex data structures.
+
+### **C++ Boilerplate: Multi-Sensor Sync**
+
+C++
+
+```
+#include "Particle.h"
+
+// Define the Ledger for environmental data
+Ledger sensorLedger;
+
+void setup() {
+    // Initialize Ledger (Cloud-side must have a corresponding definition)
+    sensorLedger = Particle.ledger("env_data");
+}
+
+void loop() {
+    static unsigned long lastUpdate = 0;
+    if (millis() - lastUpdate > 300000) { // Every 5 minutes
+        lastUpdate = millis();
+
+        // Prepare data object
+        Variant data;
+        data.set("temp", 24.5);
+        data.set("humidity", 45);
+        data.set("status", "optimal");
+
+        // Sync with Cloud - Ledger handles retries and persistence automatically
+        sensorLedger.set(data);
+    }
+}
+```
+
+---
+
+## ## 12. Asset OTA: Beyond Firmware
+
+**Asset OTA** allows you to update specific files on your device without re-flashing the entire firmware binary. This is critical for:
+
+- **Machine Learning:** Pushing new `.tflite` model files to the edge.
+    
+- **UI/UX:** Updating image assets for localized displays.
+    
+- **Config:** Large lookup tables or localization strings.
+    
+
+> **Technical Tip:** Use the Particle CLI to bundle assets:
+> 
+> `particle bundle assets/ --saveTo my_assets.bin`
+
+---
+
+## ## 13. System Health & Watchdog Strategies
+
+To ensure 99.9% uptime for remote industrial units, implement the **Application Watchdog**:
+
+1. **Hardware WDT:** Integrated into Gen 4 devices to reset the system if it hangs.
+    
+2. **Software Watchdog:** Triggered via `ApplicationWatchdog wd(60000, System.reset);` to monitor specific loops.
+    
+3. **Cloud Connection Health:** Use `Cellular.vitals()` to monitor signal-to-noise ratios (SNR). Values below **5dB** typically indicate impending connection drops in LTE-M environments.
+    
+
+---
+
+### **Next Steps for Your Project**
+
+- **Would you like me to generate a tailored bill of materials (BOM) based on a specific use case?**
+    
+- **Do you need a Python script example for interacting with the Tachyon 5G's AI accelerator?**
+    
+- **Would you like a step-by-step guide for migrating a Gen 2 (Electron/Photon) project to Gen 4 (Boron/Photon 2)?**
