@@ -8,7 +8,7 @@
     
 - BYD
     
-- (Additional partners represented by architectural SVG assets partner1, partner3, partner4, partner5, partner6, and partner7)
+- (Additional partners represented by icons: GAC, HELI, XCMG, HC, LIUGONG, SANY, Multiway)
     
 
 ### EV Charging Solutions
@@ -23,19 +23,250 @@
 
 Founded in 2015, Guangdong AiPower New Energy Technology Co., Ltd. has emerged as a pioneering force in the electric vehicle (EV) charging and lithium battery sector. Committed to innovation, we integrate advanced R&D, manufacturing, sales, and comprehensive service solutions to deliver efficient and reliable energy charging products globally.
 
-- **Year Established:** 2015
+- **Year Established**: 2015
     
-- **Patents Secured:** 70+
+- **Patents Secured**: 70+
     
-- **Manufacturing Facility:** 20,000 m²
+- **Manufacturing Facility**: 20,000 m²
     
 
 **Operational Highlights:**
 
-- **Advanced EV Charger Manufacturing:** Our workshops are equipped with cutting-edge automation and robotic technologies.
+- **Advanced EV Charger Manufacturing**: Our workshops are equipped with cutting-edge automation and robotic technologies.
     
-- **Innovative R&D Center:** Dedicated to developing next-generation EV charging solutions, focusing on energy efficiency.
+- **Innovative R&D Center**: Dedicated to developing next-generation EV charging solutions, focusing on energy efficiency.
     
+
+---
+
+## PART 1: THE DEEP DIVE (Technical Layer)
+
+### Product Categories
+
+- EV Charger
+    
+- Industrial Battery Charger
+    
+- Industrial Lithium Battery
+    
+- Power Module
+    
+
+### Detailed Product Specifications
+
+#### Portable EV Charger American Standard
+
+The Portable EV Charger American Standard is a convenient charging solution specifically designed for American electric vehicle. With a durable design, this charger is ideal for EV owners seeking a reliable and easy-to-use portable option.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+#### AC EV Charger European Standard
+
+The AC EV Charger European Standard is a reliable and efficient charging solution tailored for European electric vehicles. Designed for both home and public charging, this charger offers compatibility with a wide range of EV models across Europe.
+
+- **Key Features**: Energy Efficiency, Widespread Compatibility, Extended Battery Life, Cost-Effective.
+    
+
+#### AC EV Charger Chinese Standard
+
+The AC EV Charger Chinese Standard is a dependable and efficient charging solution designed for China electric vehicles. Whether used at home or in public settings, this charger is compatible with a wide range of EV models across the China.
+
+- **Key Features**: Energy Efficiency, Widespread Compatibility, Extended Battery Life, Cost-Effective.
+    
+
+#### DC EV Charger European Standard
+
+This DC fast EV charger is designed for rapid and efficient charging of European electric vehicles. With high voltage and power output, it dramatically shortens charging times. Built-in overvoltage and overcurrent protection ensure safe, stable, and reliable performance for both commercial and public EV charging applications.
+
+- **Key Features**: Safety Protections, High Power Output, Faster Charging.
+    
+
+#### DC EV Charger European Standard (30kW Power Module)
+
+The DC EV Charger European Standard is designed for fast and efficient charging of European electric vehicles. It offers high voltage and power output, significantly reducing charging times. With advanced safety features such as overvoltage and overcurrent protection.
+
+- **Key Features**: Safety Protections, High Power Output, Faster Charging.
+    
+
+#### DC EV Charger Chinese Standard
+
+The DC EV Charger Chinese Standard is a high-performance charging solution designed for fast and efficient charging of electric vehicles. This charger offers rapid DC charging, significantly reducing the time it takes to recharge your EV.
+
+- **Key Features**: Safety Protections, High Power Output, Faster Charging.
+    
+
+#### Portable EV Charger European Standard
+
+The Portable EV Charger European Standard is designed to meet the rigorous demands of European electric vehicles. Compact and easy to transport, this charger is ideal for home or travel use. It features advanced safety measures and it is compatible with a wide range of EV models in Europe.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+#### Portable EV Charger European Standard (No Screen Model)
+
+This portable EV charger is engineered to meet the rigorous European standards, delivering safe, efficient, and reliable charging at home or on the move. Compact, lightweight, and travel-ready, it’s compatible with a wide range of electric vehicle models and features advanced safety protections for hassle-free daily or on-the-road use.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+#### Portable NACS Standard EV Charger
+
+The Portable NACS Standard EV Charger by AiPower is a compact charging solution designed for electric vehicle owners who need flexibility on the go. With multiple plug options, this charger ensures compatibility with Tesla EV models and charging stations. Its lightweight design and robust construction make it ideal for travel.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+### Services We Provide
+
+We specialize in developing and providing cutting-edge EV charging solutions to support the transition to renewable energy in transportation.
+
+- **Custom EV Charger Solutions**: We offer tailored EV charging solutions that meet the specific needs of businesses and residential properties. Our expertise ensures that every installation is optimized for performance and efficiency.
+    
+- **SKD, CKD Assembly**: Our assembly service includes SKD and CKD production that enhances the localization of EV charger manufacturing, ensuring quality control and faster delivery for our clients.
+    
+- **Onsite Installation Services**: Our team provides comprehensive onsite installation of EV charging stations, ensuring all systems are operational and meets the latest safety standards.
+    
+- **After-Sales EV Charger Support**: We offer continued after-sales support including maintenance and upgrades to ensure peak performance of our EV charging stations. Our committed customer service team is always available to assist.
+    
+
+### Customer Testimonials
+
+- **Raymond Wang (Workshop Director, BYD)**: "AiPower’s EV solutions impress me with their commitment to sustainability."
+    
+- **Anjali Sharma (EV Owner and Environmental Advocate)**: "Switching to electric was a big decision for me, but with AiPower's extensive charging network, it has been a seamless experience. I never worry about charging my EV, even on long trips!"
+    
+- **Raj Patel (Tech Enthusiast & Ather Owner)**: "AiPower is a game changer! Not only is charging quick and efficient, but the app gives me real-time updates on my charging status. Highly recommend it!"
+    
+
+### Blog Center
+
+- **Electric Vehicle Charging Station Design That Works in the Real World** (Guidelines | 29 Jan, 2026)
+    
+- **EV Charger Types Explained: Levels, Connectors, and Real-World Use** (Guidelines | 28 Jan, 2026)
+    
+- **Top 10 Forklift Charger Manufacturers in China** (Industry News | 22 Dec, 2025)
+    
+- **AiPower Debuts Ultra-Fast & Smart Charging Solutions at CHTF 2025** (Company | 18 Nov, 2025)
+    
+- **Apartment EV Charging Station Solutions for Multifamily Properties** (Guidelines | 14 Nov, 2025)
+    
+- **What Does EVSE Meaning Stand For? Complete Guide for Businesses** (Guidelines | 25 Oct, 2025)
+    
+
+---
+
+## PART 1: THE DEEP DIVE (Technical Layer)
+
+### Product Categories
+
+- EV Charger
+    
+- Industrial Battery Charger
+    
+- Industrial Lithium Battery
+    
+- Power Module
+    
+
+### Detailed Product Specifications
+
+#### Portable EV Charger American Standard
+
+The Portable EV Charger American Standard is a convenient charging solution specifically designed for American electric vehicle. With a durable design, this charger is ideal for EV owners seeking a reliable and easy-to-use portable option.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+#### AC EV Charger European Standard
+
+The AC EV Charger European Standard is a reliable and efficient charging solution tailored for European electric vehicles. Designed for both home and public charging, this charger offers compatibility with a wide range of EV models across Europe.
+
+- **Key Features**: Energy Efficiency, Widespread Compatibility, Extended Battery Life, Cost-Effective.
+    
+
+#### AC EV Charger Chinese Standard
+
+The AC EV Charger Chinese Standard is a dependable and efficient charging solution designed for China electric vehicles. Whether used at home or in public settings, this charger is compatible with a wide range of EV models across the China.
+
+- **Key Features**: Energy Efficiency, Widespread Compatibility, Extended Battery Life, Cost-Effective.
+    
+
+#### DC EV Charger European Standard
+
+This DC fast EV charger is designed for rapid and efficient charging of European electric vehicles. With high voltage and power output, it dramatically shortens charging times. Built-in overvoltage and overcurrent protection ensure safe, stable, and reliable performance for both commercial and public EV charging applications.
+
+- **Key Features**: Safety Protections, High Power Output, Faster Charging.
+    
+
+#### DC EV Charger European Standard (30kW Power Module)
+
+The DC EV Charger European Standard is designed for fast and efficient charging of European electric vehicles. It offers high voltage and power output, significantly reducing charging times. With advanced safety features such as overvoltage and overcurrent protection.
+
+- **Key Features**: Safety Protections, High Power Output, Faster Charging.
+    
+
+#### DC EV Charger Chinese Standard
+
+The DC EV Charger Chinese Standard is a high-performance charging solution designed for fast and efficient charging of electric vehicles. This charger offers rapid DC charging, significantly reducing the time it takes to recharge your EV.
+
+- **Key Features**: Safety Protections, High Power Output, Faster Charging.
+    
+
+#### Portable EV Charger European Standard
+
+The Portable EV Charger European Standard is designed to meet the rigorous demands of European electric vehicles. Compact and easy to transport, this charger is ideal for home or travel use. It features advanced safety measures and it is compatible with a wide range of EV models in Europe.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+#### Portable EV Charger European Standard (Model 2)
+
+This portable EV charger is engineered to meet the rigorous European standards, delivering safe, efficient, and reliable charging at home or on the move. Compact, lightweight, and travel-ready, it’s compatible with a wide range of electric vehicle models and features advanced safety protections for hassle-free daily or on-the-road use.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+#### Portable NACS Standard EV Charger
+
+The Portable NACS Standard EV Charger by AiPower is a compact charging solution designed for electric vehicle owners who need flexibility on the go. With multiple plug options, this charger ensures compatibility with Tesla EV models and charging stations. Its lightweight design and robust construction make it ideal for travel.
+
+- **Key Features**: Emergency Backup, Cost-Effective, Safety Protections, Flexible and Smart.
+    
+
+### Services
+
+- **Custom EV Charger Solutions**: We offer tailored EV charging solutions that meet the specific needs of businesses and residential properties. Our expertise ensures that every installation is optimized for performance and efficiency.
+    
+- **SKD, CKD Assembly**: Our assembly service includes SKD and CKD production that enhances the localization of EV charger manufacturing, ensuring quality control and faster delivery for our clients.
+    
+- **Onsite Installation Services**: Our team provides comprehensive onsite installation of EV charging stations, ensuring all systems are operational and meets the latest safety standards.
+    
+- **After-Sales EV Charger Support**: We offer continued after-sales support including maintenance and upgrades to ensure peak performance of our EV charging stations. Our committed customer service team is always available to assist.
+    
+
+### Customer Testimonials
+
+- **Raymond Wang (Workshop Director, BYD)**: "AiPower’s EV solutions impress me with their commitment to sustainability."
+    
+- **Anjali Sharma (EV Owner and Environmental Advocate)**: "Switching to electric was a big decision for me, but with AiPower's extensive charging network, it has been a seamless experience. I never worry about charging my EV, even on long trips!"
+    
+- **Raj Patel (Tech Enthusiast & Ather Owner)**: "AiPower is a game changer! Not only is charging quick and efficient, but the app gives me real-time updates on my charging status. Highly recommend it!"
+    
+
+### Latest News
+
+- **Electric Vehicle Charging Station Design That Works in the Real World** (Guidelines | 29 Jan, 2026)
+    
+- **EV Charger Types Explained: Levels, Connectors, and Real-World Use** (Guidelines | 28 Jan, 2026)
+    
+- **Top 10 Forklift Charger Manufacturers in China** (Industry News | 22 Dec, 2025)
+    
+- **AiPower Debuts Ultra-Fast & Smart Charging Solutions at CHTF 2025** (Company | 18 Nov, 2025)
+    
+- **Apartment EV Charging Station Solutions for Multifamily Properties** (Guidelines | 14 Nov, 2025)
+    
+- **What Does EVSE Meaning Stand For? Complete Guide for Businesses** (Guidelines | 25 Oct, 2025)
 
 ---
 
@@ -563,43 +794,49 @@ Reliable charging infrastructure specifically for Automated Guided Vehicles (AGV
 
 ## PART 9: THE BACK DOOR (Footer & Support Layer)
 
-### Contact & Connectivity
+**Let's Keep in Touch**
 
-AiPower maintains a global support network for installation and after-sales service.
-
-- **Primary Contact**: sales@evaisun.com
+- **Email Subscription**: Your Email
     
-- **WhatsApp**: +86 13316611059
+- **LinkedIn**: [linkedin](https://www.linkedin.com/company/evaisun/)
     
-- **Location**: Huaiyang District, Zhoukou City, Henan Province / Guangdong
+- **YouTube**: [youtube](https://www.youtube.com/@evaisun)
     
-- **Social Channels**: LinkedIn, YouTube, Facebook, and Twitter (X)
+- **Facebook**: [facebook](https://www.facebook.com/evaisun/)
     
-
-### Essential Technical Resources
-
-- **AiPower Catalogue of EV Charger**: PDF | 1 M
-    
-- **AiPower Catalogue of Forklift Battery Charger**: PDF | 1 M
-    
-- **AiPower Catalogue of Lithium Battery**: PDF | 1 M
+- **Twitter (X)**: [twitter](https://x.com/evaisun)
     
 
-### Final Footer Specifications
+**PRODUCTS**
 
-- **Corporate Entity**: Guangdong AiPower New Energy Technology Co., Ltd.
+- **AC EV Charger**: [AC EV Charger](https://www.evaisun.com/ac-ev-charger/)
     
-- **Legal**: All rights reserved.
+- **DC EV Charger**: [DC EV Charger](https://www.evaisun.com/dc-ev-charger/)
     
-- **Cookie Policy**: Website uses cookies to enhance experience, simplify navigation, and assist marketing efforts.
+- **EV Charger Adapter**: [EV Charger Adapter](https://www.evaisun.com/ev-charger-adapter/)
     
-- **Subscription**: Newsletter available for latest industry and product news across EV Charger, Industrial Battery Charger, Industrial Lithium Battery, and Power Module categories.
+- **Portable EV Charger**: [Portable EV Charger](https://www.evaisun.com/portable-ev-charger/)
+    
+- **Industrial Battery Charger**: [Industrial Battery Charger](https://www.evaisun.com/industrial-battery-charger/)
+    
+- **Industrial Lithium Battery**: [Industrial Lithium Battery](https://www.evaisun.com/lithium-battery-module/)
     
 
-### Full Solutions Index (Summary of Coverage)
+**SOLUTIONS**
 
-|**Category**|**Sub-Applications**|
-|---|---|
-|**Industrial**|Electric Forklift Chargers, AGV Charging Stations|
-|**Commercial**|Electric Bus Stations, Electric Truck Stations, Fleet Charging, Commercial EV Stations|
-|**Residential**|Home Charging Solutions, Portable EV Chargers|
+- **Industrial Use**: [Industrial Use](https://www.evaisun.com/solution/industrial-use/)
+    
+- **Business Use**: [Business Use](https://www.evaisun.com/solution/business-use/)
+    
+- **Home Charging**: [Home Charging](https://www.evaisun.com/solution/home-charging/)
+    
+
+**COMPANY**
+
+- **About Us**: [About Us](https://www.evaisun.com/about/)
+    
+- **Contact Us**: [Contact Us](https://www.evaisun.com/contact/)
+    
+- **News**: [News](https://www.evaisun.com/blog/)
+    
+- **FAQ**: [FAQ](https://www.evaisun.com/faqs/)
