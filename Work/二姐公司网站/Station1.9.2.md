@@ -294,3 +294,100 @@ To ensure 99.9% uptime for remote industrial units, implement the **Application 
 - **Do you need a Python script example for interacting with the Tachyon 5G's AI accelerator?**
     
 - **Would you like a step-by-step guide for migrating a Gen 2 (Electron/Photon) project to Gen 4 (Boron/Photon 2)?**
+
+# Particle Master Documentation: Part 4 (Implementation & Migration)
+
+This section provides the "Action Plan" for moving from prototyping to industrial deployment, including migration paths for legacy hardware and specialized AI workflows for the Tachyon.
+
+---
+
+## ## 14. Migration Guide: Gen 2/3 to Gen 4 (Photon 2 / Boron)
+
+If you are upgrading from older hardware (Photon, Electron, or Argon), keep these critical changes in mind to ensure your code and hardware remain compatible.
+
+### **Hardware Changes**
+
+- **Logic Voltage:** While still 3.3V, Gen 4 pins are **NOT 5V tolerant**. Applying 5V to a GPIO will damage the MCU.
+    
+- **Form Factor:** Most Gen 4 devices use the **Feather form factor**. Ensure your existing shields or PCBs match the pinout.
+    
+- **Power Management:** Gen 4 devices have improved PMICs. For battery projects, use the new `PowerCheck` and `System.batteryLevel()` APIs instead of legacy fuel gauge libraries.
+    
+
+### **Firmware Adjustments**
+
+- **System Threading:** In Device OS 6.x+, `SYSTEM_THREAD(ENABLED)` is often the default. Review your code to ensure thread-safe operations when accessing peripherals.
+    
+- **Wi-Fi Scanning:** On Photon 2, Wi-Fi scanning is significantly faster but uses a different underlying driver. Update any custom scanning logic to use the standard `WiFi.scan()` function.
+    
+- **BLE API:** The BLE API is now more robust. Use **NFC** on supported Gen 4 hardware for easy "Tap-to-Pair" setup in mobile apps.
+    
+
+---
+
+## ## 15. Tachyon 5G: High-Performance Edge AI
+
+The Tachyon is more than a microcontroller; it’s a Linux-based SBC designed for real-time inferencing.
+
+### **AI Accelerator Workflow**
+
+The Tachyon features an integrated NPU (often paired with Hailo-8 or similar accelerators in specific configurations).
+
+**Python Example: Accessing the AI Accelerator**
+
+Python
+
+```
+import hailo_sdk
+import cv2
+
+# Load a pre-compiled HEF (Hailo Executable File) updated via Asset OTA
+model_path = "/etc/particle/assets/yolov8_detector.hef"
+
+with hailo_sdk.InferContext(model_path) as context:
+    cap = cv2.VideoCapture(0) # USB or MIPI Camera
+    while True:
+        ret, frame = cap.read()
+        results = context.run(frame)
+        
+        # Publish detected anomalies to Particle Cloud via Python SDK
+        if results.confidence > 0.85:
+            particle.publish("anomaly_detected", str(results.label))
+```
+
+---
+
+## ## 16. M-SoM Satellite Connectivity (NTN)
+
+The **M-SoM** allows your device to stay connected even in "Dead Zones" using Non-Terrestrial Networks (NTN).
+
+- **Mechanism:** When cellular signal drops below a specific threshold (e.g., -115 dBm RSRP), the M-SoM can failover to a satellite constellation (like Skylo).
+    
+- **Cost Management:** Satellite Data Ops are typically more expensive. Use **Logic** at the edge to filter only critical alerts (e.g., "Fire Detected") for satellite transmission while caching routine telemetry for the next cellular handshake.
+    
+
+---
+
+## ## 17. Industrial Asset Tracking: Bill of Materials (BOM)
+
+To build a professional-grade tracking solution in 2026, we recommend the following components:
+
+|**Component**|**Recommendation**|**Why?**|
+|---|---|---|
+|**Core**|**Tracker One (M404)**|Fully certified, IP67, includes integrated GNSS.|
+|**Expansion**|**CAN/Modbus Card**|To pull engine diagnostics or industrial sensor data.|
+|**Battery**|**18650 Li-Po (3.7V)**|Standard high-capacity support with integrated charging.|
+|**Antenna**|**Internal Flex Antenna**|Optimized for the enclosure; supports LTE-M and GPS.|
+|**Enclosure**|**M1 Industrial Case**|UV resistant and impact-rated for outdoor deployment.|
+
+---
+
+### **Interactive Support**
+
+How can I best assist with your specific IoT goals today?
+
+- **Would you like me to review a schematic for a custom carrier board?**
+    
+- **Do you need a walkthrough for setting up a "Cloud-to-Device" Ledger for remote configuration?**
+    
+- **Would you like me to explain how to use "Blueprints" to deploy this master documentation into a working fleet?**
