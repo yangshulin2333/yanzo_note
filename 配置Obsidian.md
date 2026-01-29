@@ -44,3 +44,8 @@
 ## 接入Gemini-CLI AI编程工具
 
 
+
+接入Pandoc导出工具
+[Github地址](https://github.com/jgm/pandoc/releases/tag/3.8.3)
+
+C:\Program Files\Pandoc\pandoc.exe

@@ -58,9 +58,5 @@
   "showExportProgressBar": true,
   "lastExportDirectory": {
     "win32": "C:\\Users\\Admin\\Documents"
-  },
-  "pandocPath": {
-    "win32": "D:\\Yanzo\\pandoc.exe"
-  },
-  "lastExportType": "Word (.docx)"
+  }
 }
