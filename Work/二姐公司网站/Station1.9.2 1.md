@@ -61,6 +61,7 @@
 This master document synthesizes the complete Particle ecosystem—ranging from high-level business solutions to granular technical specifications.
 
 ---
+
 ## ## 0. Homepage Architecture & Copy Strategy
 
 _(Added based on Visual Reference)_
