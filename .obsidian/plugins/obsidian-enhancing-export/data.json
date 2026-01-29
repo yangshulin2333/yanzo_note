@@ -1,7 +1,8 @@
 {
   "items": [
     {
-      "name": "Markdown"
+      "name": "Markdown",
+      "openExportedFileLocation": true
     },
     {
       "name": "Markdown (Hugo)"
@@ -46,17 +47,23 @@
       "name": "OPML"
     },
     {
-      "name": "Bibliography"
+      "name": "Bibliography",
+      "openExportedFileLocation": true
     },
     {
       "name": "PowerPoint (.pptx)"
     }
   ],
+  "pandocPath": {
+    "win32": "C:\\Program Files\\Pandoc\\pandoc.exe"
+  },
   "defaultExportDirectoryMode": "Auto",
   "openExportedFile": true,
   "env": {},
   "showExportProgressBar": true,
   "lastExportDirectory": {
     "win32": "C:\\Users\\Admin\\Documents"
-  }
+  },
+  "lastEditName": "Bibliography",
+  "lastExportType": "Word (.docx)"
 }

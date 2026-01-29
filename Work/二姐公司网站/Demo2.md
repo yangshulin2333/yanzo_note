@@ -1,10 +1,8 @@
-
-### 【V2.0 深度扩充版】官网建设核心资料库
+### 官网建设核心资料库
 
 
 **这版内容涵盖了具体的页面文案、技术参数逻辑、以及业务流程描述。** 请把这些详细内容作为 Context 喂给 AI，让它严格基于此生成内容。
 
----
 
 ### 1. 首页 (Homepage) 
 
@@ -763,4 +761,3 @@ Acknowledge this persona. Once I paste the content for each section, process it 
 2. **再发 第1-6板块的内容** (给 AI 喂素材)。
     
 3. **最后让 AI 生成**。
-    
