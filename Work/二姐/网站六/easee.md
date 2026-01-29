@@ -520,43 +520,53 @@ Get the most out of your charging experience with our functional range of access
 
 ---
 
-## PART 15: EASEE CONTROL (Administrative Layer)
+## PART 15: EASEE CONTROL (Verbatim Extraction)
 
-### Administrative Mission
+### Easee Control
 
-- **Purpose:** Easee Control allows you to manage and keep track of one or more charging sites and manage customer relationships.
-    
-- **Philosophy:** We want you to control our products – not for our products to control you.
-    
-- **Cost:** Free of charge and continuously developed.
-    
+**Services** [Log in](https://control.easee.com/)
 
-### Core Features & Dashboards
+Easee Control allows you to manage and keep track of one or more charging sites. Additionally, Easee Control is used to manage your profile and your customer relationship with us. We want you to control our products – not for our products to control you.
 
-- **Dashboard Customization:** Customize the view to track chargers currently in use, finished sessions, and power consumption levels.
-    
-- **Easee Cloud Profile:** Manage personal account, access individual EV chargers, and view personal consumption data.
-    
-- **Site Monitoring:** Decisions on which information to view for monitoring charging site load.
-    
+### Complete overview of the site
 
-### User & Consumption Management
+Managing a large charging site can be time-consuming and complex. Easee Control offers all the essential features you need, giving you complete oversight and control of your site. With Easee Control, you can manage EV chargers, set charging prices, monitor the facility’s status, and more. Best of all, Easee Control is free of charge and continuously developed.
 
-- **User Roles:** Invite users via phone numbers; users then manage their own Easee Keys through their cloud profiles.
+#### Easee Cloud
+
+Manage your personal account with ease from your Easee Cloud profile. From there, you can access your EV chargers and personal consumption data.
+
+#### Charging Site
+
+We have made monitoring your charging site’s load easy. You decide which information you want to view.
+
+#### Dashboard
+
+Customize the dashboard to your liking. Keep track of the number of EV chargers currently in use, those that have finished charging, and the amount of power they are consuming.
+
+#### Users and Roles
+
+As the administrator of a charging site, you can easily invite users via their phone numbers. Users then manage their own Easee Keys directly from their Easee Cloud profile.
+
+#### Consumption
+
+As the administrator, you can view site consumption data per week, month or year for all users and all chargers. Users can access their Easee Cloud profile to view their personal consumption data.
+
+#### Reports
+
+Generate detailed reports on charger consumption, users or Easee Keys. The reports will calculate VAT automatically.
+
+### Complete control of every single EV charger
+
+Whenever you need to delve deep into the details of a single charger on a site, Easee Control is the one-stop shop that offers everything you need. Easee Control allows you to check the status of all individual chargers, as well as the WiFi signal, mobile network connection, sofware version etc.
+
+### Easee Cloud User Account
+
+**Log in or create an account**
+
+1. **Log in** If you already have an Easee App account, simply sign in to Easee Control using the same credentials. If you do not have an account, you will need to → [Create a new one](https://control.easee.com/).
     
-- **Consumption Tracking:** View site consumption data per week, month, or year for all users and all chargers.
-    
-- **Automated Reporting:** Generate detailed reports on consumption, users, or Easee Keys with automatic VAT calculation.
-    
-
-### Deep Hardware Control
-
-- **One-Stop Shop:** Drill down into individual charger details including status, WiFi signal strength, mobile network connection, and software versions.
-    
-
-### Access Credentials
-
-- **Unified Account:** Sign in using existing Easee App credentials or create a new account with SMS activation.
+2. **Create account** Begin by filling in your personal data. You will then receive an SMS to activate your account. Activate, and you are ready to sign in!
     
 
 ---
