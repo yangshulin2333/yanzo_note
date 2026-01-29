@@ -134,6 +134,7 @@ _给 AI 的指令：不要让页面死胡同，给一个最后的强力引导。
 - **Form Trigger**: [Request a Free Consultation]
     
 ---
+
 ### 2. 产品中心 (Products) 
 
 **页面策略**：不仅展示产品，更要展示“场景匹配能力”和“技术合规性”。建议将产品分为两个大类页面（AC 系列与 DC 系列），每个页面包含“概览”、“核心功能”、“详细参数表”。
@@ -179,6 +180,7 @@ _给 AI 的指令：这一页要结合 Wallbox 的设计感和 Easee 的智能�
     - _Protection_: DC 6mA + Type A AC RCD, Over/Under Voltage, Surge Protection, Over Temperature.
         
 ---
+
 #### **Category B: High-Power DC Fast Chargers (直流快充 - 利润款)**
 
 _给 AI 的指令：这一页要展现“工业级的可靠性”。参考 Flex/Jabil 的硬核风格。强调“模块化”和“高电压平台”。_
@@ -224,6 +226,7 @@ _给 AI 的指令：这一页要展现“工业级的可靠性”。参考 Flex/
     - _Enclosure_: Galvanized steel with anti-corrosion powder coating (C4/C5 Marine grade available).
         
 ---
+
 #### **Category C: Accessories & Mounting (配件 - 完善产品线)**
 
 _给 AI 的指令：不要忽略配件，这能体现服务的完整性。_
@@ -341,6 +344,7 @@ _给 AI 的指令：解决B端客户最刁钻的问题。_
     - A: "Absolutely not. We sign strict NDAs (Non-Disclosure Agreements) and IP protection contracts. Your custom molds and code are exclusive to you."
         
 ---
+
 ### 4. 技术与软件 (Technology & Software)
 
 **页面策略**：强调“智能硬件”属性，突出对电网的友好性（Smart Grid Ready）和对运营商后台的开放性（Open Ecology）。
