@@ -1,6 +1,39 @@
 ## PART 0: THE FRONT DOOR (Marketing Layer)
 
-### Top EV Charging Partners
+### Navigation Menu
+
+- [Products](https://www.evaisun.com/products/)
+    
+- [Applications](https://www.evaisun.com/electric-forklift-battery-chargers/)
+    
+    - [Electric Forklift Battery Chargers](https://www.evaisun.com/electric-forklift-battery-chargers/)
+        
+    - [Electric Bus Charging Stations](https://www.evaisun.com/electric-bus-charging-stations/)
+        
+    - [Electric Truck Charging Stations](https://www.evaisun.com/truck-charging-stations/)
+        
+    - [AGV Charging Stations](https://www.evaisun.com/agv-charging-stations/)
+        
+    - [Fleet Charging Stations](https://www.evaisun.com/fleet-charging-stations/)
+        
+    - [Commercial Electric Vehicle Charging Station](https://www.evaisun.com/commercial-electric-vehicle-charging-station/)
+        
+- [Services](https://www.evaisun.com/services/)
+    
+    - [Custom EV Charger Solutions](https://www.evaisun.com/services/#customization-service)
+        
+    - [SKD, CKD Assembly](https://www.evaisun.com/services/#skd-ckd-assembly)
+        
+    - [Onsite Installation Services](https://www.evaisun.com/services/#onsite-service)
+        
+    - [After-Sales EV Charger Support](https://www.evaisun.com/services/#after-sales-service)
+        
+- [About Us](https://www.evaisun.com/about/)
+    
+- [Blog & News](https://www.evaisun.com/blog/)
+    
+
+### Our Partners
 
 - Lonking
     
@@ -8,18 +41,31 @@
     
 - BYD
     
-- (Additional partners represented by icons: GAC, HELI, XCMG, HC, LIUGONG, SANY, Multiway)
+- GAC
+    
+- HELI
+    
+- XCMG
+    
+- HC
+    
+- LIUGONG
+    
+- SANY
+    
+- Multiway
     
 
 ### EV Charging Solutions
 
-|**Segment**|**Description**|
-|---|---|
-|**Industrial Use**|Our industrial EV charging solutions are designed for businesses looking to integrate sustainable energy into their operations.|
-|**Business Use**|Empower your business with our advanced EV charging stations tailored for commercial environments.|
-|**Home Charging**|Simplify your life with our home EV charging solutions, designed for convenience and efficiency.|
+- **Industrial Use**: Our industrial EV charging solutions are designed for businesses looking to integrate sustainable energy into their operations.
+    
+- **Business Use**: Empower your business with our advanced EV charging stations tailored for commercial environments.
+    
+- **Home Charging**: Simplify your life with our home EV charging solutions, designed for convenience and efficiency.
+    
 
-### About AiPower
+### Top EV Charger & Industrial Battery Charger Manufacturer in China
 
 Founded in 2015, Guangdong AiPower New Energy Technology Co., Ltd. has emerged as a pioneering force in the electric vehicle (EV) charging and lithium battery sector. Committed to innovation, we integrate advanced R&D, manufacturing, sales, and comprehensive service solutions to deliver efficient and reliable energy charging products globally.
 
@@ -36,6 +82,53 @@ Founded in 2015, Guangdong AiPower New Energy Technology Co., Ltd. has emerged a
     
 - **Innovative R&D Center**: Dedicated to developing next-generation EV charging solutions, focusing on energy efficiency.
     
+
+### Explore Intelligent EV Charger
+
+- EV Charger
+    
+- Industrial Battery Charger
+    
+- Industrial Lithium Battery
+    
+- Power Module
+    
+
+### Services We Provide
+
+We specialize in developing and providing cutting-edge EV charging solutions to support the transition to renewable energy in transportation.
+
+- **Custom EV Charger Solutions**: We offer tailored EV charging solutions that meet the specific needs of businesses and residential properties. Our expertise ensures that every installation is optimized for performance and efficiency.
+    
+- **SKD, CKD Assembly**: Our assembly service includes SKD and CKD production that enhances the localization of EV charger manufacturing, ensuring quality control and faster delivery for our clients.
+    
+- **Onsite Installation Services**: Our team provides comprehensive onsite installation of EV charging stations, ensuring all systems are operational and meets the latest safety standards.
+    
+- **After-Sales EV Charger Support**: We offer continued after-sales support including maintenance and upgrades to ensure peak performance of our EV charging stations. Our committed customer service team is always available to assist.
+    
+
+### Hear from the Customers
+
+- **Raymond Wang (Workshop Director, BYD)**: "AiPower’s EV solutions impress me with their commitment to sustainability."
+    
+- **Anjali Sharma (EV Owner)**: "Switching to electric was a big decision for me, but with AiPower's extensive charging network, it has been a seamless experience. I never worry about charging my EV, even on long trips!"
+    
+- **Raj Patel (Tech Enthusiast)**: "AiPower is a game changer! Not only is charging quick and efficient, but the app gives me real-time updates on my charging status. Highly recommend it!"
+    
+
+### Blog Center
+
+- **Electric Vehicle Charging Station Design That Works in the Real World** (Jan 29, 2026)
+    
+- **EV Charger Types Explained: Levels, Connectors, and Real-World Use** (Jan 28, 2026)
+    
+- **Top 10 Forklift Charger Manufacturers in China** (Dec 22, 2025)
+    
+- **AiPower Debuts Ultra-Fast & Smart Charging Solutions at CHTF 2025** (Nov 18, 2025)
+    
+- **Apartment EV Charging Station Solutions for Multifamily Properties** (Nov 14, 2025)
+    
+- **What Does EVSE Meaning Stand For? Complete Guide for Businesses** (Oct 25, 2025)
 
 ---
 
