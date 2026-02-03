@@ -41,7 +41,9 @@ ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊�
 ![](assets/SottishPower公司/file-20260204023609265.png)
 
 ## Time of use Tarrifs
+官方新闻稿，证明 11am-4pm 时段
 
+![](assets/SottishPower公司/file-20260204024846692.png)
 
 ## Type of use tariffs
 
