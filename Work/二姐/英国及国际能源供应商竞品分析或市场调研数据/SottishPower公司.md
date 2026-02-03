@@ -38,6 +38,7 @@ ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊�
 
 ## Heat pumps
 
+![](assets/SottishPower公司/file-20260204023609265.png)
 
 ## Time of use Tarrifs
 
