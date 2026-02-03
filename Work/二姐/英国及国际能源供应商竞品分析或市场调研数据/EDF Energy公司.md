@@ -51,3 +51,9 @@
 **截图**非常关键。正文虽然提到了 V2G，但页面大标题是 **"Workplace EV charging" (工作场所充电)**。这反向证明了家用 (Domestic) 目前没有 V2G 产品。
 
 ![](assets/EDF%20Energy公司/file-20260203231343512.png)
+
+## Domestic
+虽然没直接写 "3.7 Million"，但第一行大字 **"Britain's biggest generator of zero carbon electricity"**（英国最大的零碳电力生产商）就是最硬的背书。作为 Big 6（六大巨头），这个体量是默认事实。
+![](assets/EDF%20Energy公司/file-20260203232632196.png)
+
+## Private (office, fleets)
