@@ -29,8 +29,11 @@ ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊�
 
 ## BESS
 
+寻找 "Modular design" (模块化设计) 和 "Capacity from 2.9kWh" (2.9度电起) 的描述，这正是 **Fox ESS ECS** 系列的独有规格。
 
+![](assets/SottishPower公司/file-20260204021204308.png)
 ## PV/Solar
+第 2-3 页，可以看到关于 "Solar PV Panels" 的描述，虽然没写品牌，但写了 "Monocrystalline" (单晶) 和 "Smart Inverter" (智能逆变器)。
 
 
 ## Heat pumps
