@@ -6,7 +6,8 @@ ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊�
 ![](assets/SottishPower公司/file-20260204013457459.png)
 
 ## Countries covered
-
+UK
+![](assets/SottishPower公司/file-20260204014128476.png)
 
 ## Population of total coverage
 
