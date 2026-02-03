@@ -23,6 +23,8 @@ ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊�
 **❌ 缺失项**： 完全找不到类似 "Lease an EV"（租赁电动车）或 "Buy an EV"（购买电动车）的入口。
 ![](assets/SottishPower公司/file-20260204015341244.png)
 ## EVSE
+官网现在同时销售 **Indra Smart PRO** 和 **Indra Smart LUX** 充电桩，旨在为用户提供更多选择（"gives even greater choice"）。
+![](assets/SottishPower公司/file-20260204020543285.png)
 
 
 ## BESS
