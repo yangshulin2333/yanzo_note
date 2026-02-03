@@ -34,6 +34,8 @@
 ## PV/Solar
 
 
+![](assets/SSE%20plc%20(UK)公司/file-20260204035344065.png)公司/file-20260204035344065.png)
+
 ## Heat pumps
 
 
