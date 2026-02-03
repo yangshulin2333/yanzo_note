@@ -61,3 +61,4 @@ ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊�
 
 ## Private (office, fleets)
 
+![](assets/SottishPower公司/file-20260204032348844.png)
