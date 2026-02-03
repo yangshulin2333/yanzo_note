@@ -15,8 +15,13 @@
 ## Evs (Leasing)
 
 
+![](assets/SSE%20plc%20(UK)公司/file-20260204034116252.png)公司/file-20260204034116252.png)
 ## EVSE
+- 页面清晰列出两个品牌 Logo：**Ohme** 和 **Zappi (myenergi)**。
+    
+- 价格和安装服务详情。
 
+![](assets/SSE%20plc%20(UK)公司/file-20260204034347547.png)公司/file-20260204034347547.png)
 
 ## BESS
 
