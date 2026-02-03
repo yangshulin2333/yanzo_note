@@ -2,7 +2,8 @@
 ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊贝德罗拉集团）** 的全资子公司。
 ![](assets/SottishPower公司/file-20260204001212857.png)
 ## Annual Revenue
-
+（Page 89, Note 5），**Annual Revenue（年度营收）**
+![](assets/SottishPower公司/file-20260204013457459.png)
 
 ## Countries covered
 
