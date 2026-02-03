@@ -24,8 +24,13 @@
 ![](assets/SSE%20plc%20(UK)公司/file-20260204034347547.png)公司/file-20260204034347547.png)
 
 ## BESS
+- 打开后，截取顶部大标题 **"Monk Fryston Battery Storage Project"**。
+    
+- 页面下方的数据栏：**"320MW Capacity"** 和 **"Under Construction"**（或 Status: In construction）。
+    
+- **证明点**：SSE 在搞巨大的电网级电池
 
-
+![](assets/SSE%20plc%20(UK)公司/file-20260204034928880.png)公司/file-20260204034928880.png)
 ## PV/Solar
 
 
