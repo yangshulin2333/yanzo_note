@@ -10,3 +10,7 @@
 ## Countries covered
 ![](assets/EDF%20Energy公司/file-20260203212605197.png)
 
+## Population of total coverage
+![](assets/EDF%20Energy公司/file-20260203215442286.png)
+
+## Evs (Leasing)
