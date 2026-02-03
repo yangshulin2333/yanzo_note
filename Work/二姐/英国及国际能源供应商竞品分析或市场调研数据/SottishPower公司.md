@@ -53,6 +53,11 @@ ScottishPower 已经在 2007 年退市，成为了 **Iberdrola（西班牙伊�
 
 ## Domestic
 
+- 页面上有一个饼图 (Pie Chart) 叫 **"Electricity supply market shares by company"**。
+    
+- 把鼠标悬停在 **ScottishPower** 那块颜色上，会显示 **~9% - 10%** 的市场份额（这对应了约 460 万客户）。
+
+![](assets/SottishPower公司/file-20260204031357102.png)
 
 ## Private (office, fleets)
 
