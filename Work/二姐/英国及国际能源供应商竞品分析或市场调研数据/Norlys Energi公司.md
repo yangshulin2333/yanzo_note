@@ -8,8 +8,10 @@
 ## Population of total coverage
 
 
+![](assets/Norlys%20Energi公司/file-20260204131558623.png)
 ## Evs (Leasing)
 
+![](assets/Norlys%20Energi公司/file-20260204131759816.png)
 
 ## EVSE
 
