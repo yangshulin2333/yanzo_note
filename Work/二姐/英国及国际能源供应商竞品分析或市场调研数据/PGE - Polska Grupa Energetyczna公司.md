@@ -1,6 +1,10 @@
 ## Annual Revenue
 
 
+![](assets/PGE%20-%20Polska%20Grupa%20Energetyczna公司/file-20260205023450643.png)
+
+![](assets/PGE%20-%20Polska%20Grupa%20Energetyczna公司/file-20260205023450644.png)
+
 ## Countries covered
 
 
