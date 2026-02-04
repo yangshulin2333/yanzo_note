@@ -1,5 +1,6 @@
 ## Annual Revenue
 
+![](assets/Norlys%20Energi公司/file-20260204131035403.png)
 
 ## Countries covered
 
