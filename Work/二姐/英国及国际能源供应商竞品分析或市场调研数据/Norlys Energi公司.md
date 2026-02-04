@@ -40,3 +40,6 @@
 
 ## Private (office, fleets)
 
+
+## Vehicle-to-grid pilots
+![](assets/Norlys%20Energi公司/file-20260204134522639.png)
