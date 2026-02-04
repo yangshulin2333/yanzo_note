@@ -1,6 +1,8 @@
 ## Annual Revenue
 
 
+
+![](assets/Enel公司/file-20260204234718394.png)
 ## Countries covered
 
 
