@@ -1,5 +1,6 @@
 ## Annual Revenue
 
+![](assets/Engie%20_%20Electrabel公司/file-20260204221803646.png)
 
 ## Countries covered
 
