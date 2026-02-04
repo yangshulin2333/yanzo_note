@@ -36,6 +36,7 @@
 
 ## Domestic
 
+![](assets/Norlys%20Energi公司/file-20260204133423693.png)
 
 ## Private (office, fleets)
 
