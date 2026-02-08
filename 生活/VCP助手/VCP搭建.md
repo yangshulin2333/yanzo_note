@@ -3,9 +3,9 @@
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 source ~/.bashrc
 
-### 推荐安装 Node.js 16.x (这个版本兼容性最强)
-nvm install 16
-nvm use 16
+### 推荐安装 Node.js 20.x (这个版本兼容性最强)
+nvm install 20
+nvm use 20
 
 ## Python安装
 **Ubuntu 系统本身高度依赖自带的 Python 版本**。如果操作不当覆盖了系统默认版本，可能会导致你的 DMIT 服务器连 SSH 终端都无法正常登录。
