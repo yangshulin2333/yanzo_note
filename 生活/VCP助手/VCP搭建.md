@@ -1,14 +1,15 @@
-# 安装 NVM
+
+### 安装 NVM Node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 source ~/.bashrc
 
-# 推荐安装 Node.js 16.x (这个版本兼容性最强)
+### 推荐安装 Node.js 16.x (这个版本兼容性最强)
 nvm install 16
 nvm use 16
 
-之所以不建议“直接装个就行”，是因为 **Ubuntu 系统本身高度依赖自带的 Python 版本**。如果你操作不当覆盖了系统默认版本，可能会导致你的 DMIT 服务器连 SSH 终端都无法正常登录。
+## Python安装
+**Ubuntu 系统本身高度依赖自带的 Python 版本**。如果操作不当覆盖了系统默认版本，可能会导致你的 DMIT 服务器连 SSH 终端都无法正常登录。
 
-从你的最新截图（image_a7213a.png）来看，报错 `Unable to locate package python3.10` 是因为你之前的 `add-apt-repository` 命令运行失败了（提示 `command not found`）。
 
 为了安全且成功地在 Ubuntu 22.04/24.04 上安装 Python 3.10 并解决 `npm` 报错，请**严格按照以下步骤**执行：
 
@@ -76,6 +77,48 @@ python3.10 -m pip install -r requirements.txt
 - **不破坏系统**：系统默认的 `python3` 依然是 3.12 保持不变，不会搞挂服务器。
     
 - **精准编译**：`npm` 通过 `config set` 拿到了它想要的 3.10，这样 `better-sqlite3` 就能顺利编译通过了。
-    
 
-**你现在可以先试一下第一步，如果 `add-apt-repository` 成功跑起来了，后面的安装就会非常快。**
+### pip安装
+### 1. 安装 Python 3.10 的 pip 模块
+
+Bash
+
+```
+sudo apt update
+sudo apt install python3.10-distutils curl -y
+curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3.10
+```
+
+_这一步会通过官方脚本为 Python 3.10 安装专属的 pip。_
+
+### 2. 验证安装是否成功
+
+运行以下命令，确认输出的版本信息里包含 `python 3.10`：
+
+Bash
+
+```
+python3.10 -m pip --version
+```
+
+### 3. 继续安装 VCPToolBox 的 Python 依赖
+
+一旦 pip 准备就绪，你就可以安装项目所需的依赖库了：
+
+Bash
+
+```
+# 进入项目目录
+cd /root/VCPToolBox
+
+# 使用 python3.10 的 pip 安装依赖
+python3.10 -m pip install -r requirements.txt
+```
+
+---
+
+### 🛡️ 为什么不直接用 `apt install python3-pip`？
+
+如果你直接用 `apt` 安装 pip，它通常会关联到系统默认的 Python 3.12。为了确保 VCPToolBox 运行在你刚配好的 **Python 3.10** 环境下，必须使用这种针对特定版本的安装方式。
+
+**依赖安装完成后，你就可以尝试用 PM2 启动项目了。需要我帮你检查一下启动命令吗？**
