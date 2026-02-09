@@ -464,6 +464,8 @@ http://69.63.205.187:6005/AdminPanel
 
 http://69.63.205.187:6005/v1/chat/completions
 
+http://69.63.205.187:3000/v1
+
 https://generativelanguage.googleapis.com/v1beta/models
 
 https://generativelanguage.googleapis.com
