@@ -26,11 +26,12 @@ https://freechao.com/9412.html
 
 
 
-Username:    6cVWPQ6egq
-Password:    DYERzFnsYb
-Port:        3244
-WebBasePath: J8WULffyjOdCMeWEu6
-Access URL:  https://69.63.205.187:3244/J8WULffyjOdCMeWEu6
+Username:    WFI4Ai0072
+Password:    nrQL1UWiCb
+Port:        52237
+WebBasePath: JahEX16TRAX84okEdx
+Access URL:  https://69.63.205.187:52237/JahEX16TRAX84okEdx
+
 
 
 安装ufw工具
@@ -38,3 +39,6 @@ Access URL:  https://69.63.205.187:3244/J8WULffyjOdCMeWEu6
 sudo apt install ufw -y
 ```
 
+```
+sudo ufw allow  52237
+```
