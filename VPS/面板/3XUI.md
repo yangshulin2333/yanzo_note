@@ -20,3 +20,14 @@ https://freechao.com/9412.html
     - SSL证书配置简单，用ip即可申请，需要使用默认80端口，否则面板无法访问
     - 节点协议加速效果一般
     - 有防火墙管理，方便新手放行端口
+
+
+
+
+
+
+Username:    6cVWPQ6egq
+Password:    DYERzFnsYb
+Port:        3244
+WebBasePath: J8WULffyjOdCMeWEu6
+Access URL:  https://69.63.205.187:3244/J8WULffyjOdCMeWEu6
