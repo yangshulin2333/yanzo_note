@@ -31,3 +31,10 @@ Password:    DYERzFnsYb
 Port:        3244
 WebBasePath: J8WULffyjOdCMeWEu6
 Access URL:  https://69.63.205.187:3244/J8WULffyjOdCMeWEu6
+
+
+安装ufw工具
+```
+sudo apt install ufw -y
+```
+
