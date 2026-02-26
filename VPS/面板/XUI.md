@@ -40,5 +40,5 @@ sudo apt install ufw -y
 ```
 
 ```
-sudo ufw allow  52237
+sudo ufw allow  20000
 ```
