@@ -23,9 +23,12 @@ systemctl daemon-reload
 Global address:
 http://69.63.205.187:2095/app/
 
-First admin credentials:
-        Username:        RcFBQXz+
-        Password:        xU51IGNm
 
-gsp-ssl.ls.apple.com: 9 ms
+First admin credentials:
+        Username:        EOOPrm8R
+        Password:        PQEq5ebA
+
+gsp-ssl.ls.apple.com
+ts1.tc.mm.bing.net
+ocsp2.apple.com
 
