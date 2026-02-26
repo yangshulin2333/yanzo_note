@@ -42,3 +42,30 @@ sudo apt install ufw -y
 ```
 sudo ufw allow  12381
 ```
+
+
+卸载xui
+
+```
+systemctl stop x-ui
+systemctl disable x-ui
+rm /usr/bin/x-ui -f
+rm -rf /etc/x-ui/
+rm -rf /usr/local/x-ui/
+rm -f /etc/systemd/system/x-ui.service
+systemctl daemon-reload
+```
+
+卸载sui
+```
+systemctl stop s-ui
+systemctl disable s-ui
+# 删除二进制执行文件
+rm -f /usr/bin/s-ui
+# 删除整个配置和数据库目录 (这是最重要的，防止残留数据影响后续安装)
+rm -rf /etc/s-ui/
+# 删除系统服务定义文件
+rm -f /etc/systemd/system/s-ui.service
+# 刷新系统服务列表
+systemctl daemon-reload
+```
