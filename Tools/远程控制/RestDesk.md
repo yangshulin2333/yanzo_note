@@ -2,8 +2,32 @@
 
 [YouTube](https://www.youtube.com/watch?v=t7JCgvdE7p8)
 
+[客户端下载地址](https://github.com/rustdesk/rustdesk/releases/tag/1.4.3)
 
 
+
+docker安装脚本  
+```
+bash <(curl -sSL https://cdn.jsdelivr.net/gh/SuperManito/LinuxMirrors@main/DockerInstallation.sh)  
+```
+docker-compose安装脚本  
+```
+curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose  
+```
+二、创建docker-compose.yml文件  
+
+创建一个目录，并进入此目录  
+  
+```
+mkdir  rustdesk;cd rustdesk 
+``` 
+然后再新建docker-compose.yml  
+
+```
+vim docker-compose.yml
+
+```
+yaml内容
 ```
 services:
   rustdesk:
@@ -39,5 +63,14 @@ networks:
 
 ```
 
+  
+主界面  
+http://69.63.205.187:21114  
+直接打开即可使用
 
-
+默认用户名是admin  
+密码和key可以通过查看日志获取  
+  
+```
+docker-compose logs
+```
