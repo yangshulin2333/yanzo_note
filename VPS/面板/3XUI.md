@@ -5,8 +5,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 
 
 
-Username:    eQN8xOfi9V
-Password:    AZFhETmNiu
-Port:        43122
-WebBasePath: kNlXy3hGkV3krhcs8I
-Access URL:  https://69.63.205.187:43122/kNlXy3hGkV3krhcs8I
+
+
+Username:    DJ1Zm2YsD7
+Password:    mAu2nztMME
+Port:        5880
+WebBasePath: 93t6HJdnsO1Pq5drLS
+Access URL:  https://69.63.205.187:5880/93t6HJdnsO1Pq5drLS
