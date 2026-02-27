@@ -4,6 +4,13 @@
 
 我来详细讲解刚才用到的每一个命令！
 
+初始化
+```
+git config --global user.email "yangshulin2333@gmail.com"
+
+git config --global user.name "yangshulin2333"
+```
+
 ---
 
 ## **1️⃣ `git init` - 初始化仓库**
