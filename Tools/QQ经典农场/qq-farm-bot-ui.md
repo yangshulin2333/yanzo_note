@@ -9,7 +9,9 @@ sudo apt install -y nodejs
 corepack enable
 
 # 2. 安装依赖并构建前端
-cd /path/to/qq-farm-bot-ui
+git clone https://ghfast.top/https://github.com/Penty-d/qq-farm-bot-ui.git
+
+cd /qq-farm-bot-ui
 pnpm install
 pnpm build:web
 
@@ -24,3 +26,5 @@ ADMIN_PASSWORD='yanzo' pnpm dev:core
 
 - 本机：`http://localhost:3000`
 - 局域网：`http://<你的IP>:3000`
+
+``
