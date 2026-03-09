@@ -10,7 +10,7 @@ corepack enable
 
 git clone https://ghfast.top/https://github.com/Penty-d/qq-farm-bot-ui.git
 
-cd /qq-farm-bot-ui
+cd qq-farm-bot-ui/
 pnpm install
 pnpm build:web
 
