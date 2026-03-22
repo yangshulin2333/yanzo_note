@@ -61,18 +61,3 @@ ssh -T git@github.com
 
 - 看到 `Hi yangshulin2333! You've successfully authenticated...` 就说明配置成功了。
     
-
----
-
-## 5. 额外提醒：配置 Git 用户信息
-
-重装系统后，Git 的全局配置也丢了，记得补上，否则提交代码时会报错：
-
-Bash
-
-```
-git config --global user.name "yangshulin2333"
-git config --global user.email "yangshulin2333@gmail.com"
-```
-
-**小贴士：** 既然你开了 VPN 的 TUN 模式，通常 SSH 会直接走代理。如果 `ssh -T` 依然超时，可能需要给 SSH 单独配置代理，需要我帮你写那个 `config` 文件吗？
