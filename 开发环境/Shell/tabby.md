@@ -2,6 +2,7 @@ tabby是一款开源且免费的终端连接工具。功能非常强大，不仅
 
 https://github.com/Eugeny/tabby/releases
 
+[Navicat Premium Lite 免费版](https://www.navicat.com.cn/download/navicat-premium-lite)
 
 Docker安装sql
 
