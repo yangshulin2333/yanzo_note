@@ -40,8 +40,8 @@
 
    - 双击文件夹里的 `scrcpy.exe`。
    ```
-     scrcpy -s 192.168.5.81:5555 --always-on-top
-     ```
+   scrcpy -s 192.168.5.81:5555 --always-on-top
+   ```
 
 ## 5. 避坑指南 (Troubleshooting)
 - **连接超时 / 失败**: 
