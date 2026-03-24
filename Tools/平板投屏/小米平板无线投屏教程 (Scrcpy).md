@@ -32,7 +32,7 @@
 2. **连接设备**: 
    - 在电脑黑窗口 (终端) 输入：
      ```bash
-     adb connect 192.168.5.81 --always-on-top
+     adb connect 192.168.5.81 
      ```
    - *(请将 `192.168.0.3` 替换为您平板实际的 IP)*
    - (窗口置顶，加上 `--always-on-top` 这个参数。)
@@ -40,7 +40,7 @@
 
    - 双击文件夹里的 `scrcpy.exe`。
    ```
-    -s 192.168.5.81:5555 --always-on-top
+   scrcpy -s 192.168.5.81:5555 --always-on-top
    ```
 
 ## 5. 避坑指南 (Troubleshooting)
