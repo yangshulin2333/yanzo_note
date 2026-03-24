@@ -8,4 +8,4 @@ Docker安装sql
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 sudo usermod -aG docker $USER
 
-docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql:8.0
+docker run --name mysql-db -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql:5.7
