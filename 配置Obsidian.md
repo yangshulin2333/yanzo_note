@@ -48,4 +48,9 @@
 接入Pandoc导出工具
 [Github地址](https://github.com/jgm/pandoc/releases/tag/3.8.3)
 
-C:\Program Files\Pandoc\pandoc.exe
+配置v2ray代理
+```
+git config --global http.proxy http://127.0.0.1:10808
+git config --global https.proxy http://127.0.0.1:10808
+```
+
