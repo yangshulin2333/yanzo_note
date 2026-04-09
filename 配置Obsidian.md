@@ -24,6 +24,10 @@
    ```
 	- ![350](assets/配置Obsidian/file-20251119200212550.png)
 	- 注意：移动端暂不支持ssh协议 ![50](assets/配置Obsidian/file-20251119200446037.png)
+	- 配置代理
+		- git config --global http.proxy http://127.0.0.1:10808
+		- git config --global https.proxy http://127.0.0.1:10808
+		
 5. 借助git第三方插件设置Obsidian自动云同步到git
 	- 开启`Pull on startup`选项
 	- 开启`Auto commit-and-sync after stopping file edits`选项
